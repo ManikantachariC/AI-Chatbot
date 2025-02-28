@@ -1,0 +1,26 @@
+# domain.yml
+
+version: "2.0"
+intents:
+  - ask_assignment_deadline
+  - inquire_class_schedule
+
+entities:
+  - course
+  - day
+
+slots:
+  course:
+    type: text
+  day:
+    type: text
+
+responses:
+  utter_ask_course:
+    - text: "Please specify the course name."
+  utter_ask_day:
+    - text: "Please specify the day."
+
+actions:
+  - action_provide_assignment_deadline
+  - action_share_class_schedule

@@ -1,0 +1,13 @@
+# data/stories.yml
+
+version: "2.0"
+stories:
+- story: provide assignment deadline
+  steps:
+  - intent: ask_assignment_deadline
+  - action: action_provide_assignment_deadline
+
+- story: share class schedule
+  steps:
+  - intent: inquire_class_schedule
+  - action: action_share_class_schedule

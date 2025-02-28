@@ -1,0 +1,15 @@
+# data/nlu.yml
+
+version: "2.0"
+nlu:
+- intent: ask_assignment_deadline
+  examples: |
+    - When is the [Math 101](course) assignment due?
+    - Deadline for [CS201](course) homework?
+    - What is the due date for [History 202](course) paper?
+
+- intent: inquire_class_schedule
+  examples: |
+    - What's my schedule for [Monday](day)?
+    - Do I have any classes on [Friday](day)?
+    - Tell me my timetable for [Wednesday](day).
